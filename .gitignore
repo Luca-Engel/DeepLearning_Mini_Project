@@ -1,0 +1,9 @@
+client_oauth.json
+.ipynb_checkpoints/**
+__pycache__/**
+data/__pycache__/**
+/.idea/**
+/models/finetuned_ast/
+/models/finetuned_text_class/
+/tensorboard/
+/.idea/
