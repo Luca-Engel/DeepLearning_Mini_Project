@@ -1,74 +1,38 @@
-# DeepLearning_Project
+# DeepLearning_Mini_Project
 
-## Information for TAs
-![Info](image.png)
+## Repository Structure
 
-### Leveraging Audio Transformers to Detect Hatespeech
-We will implement an audio transformer for hate speech classification. The dataset will be a text-based Hugging Face dataset that we synthesize to audio files.
+This repository is organized into four main branches, each serving a specific purpose in the project workflow:  
+### Data Preprocessing and Dataset Generation Branch:
+This branch contains all the scripts and notebooks used for data
+preprocessing and generation of the dataset. It includes the code for processing the data, and
+transforming it into a suitable dataset format for model training.
 
-As a dataset we are using the following text dataset: [Measuring Hate Speech - Hugging Face](https://huggingface.co/datasets/ucberkeley-dlab/measuring-hate-speech/viewer?row=99)
-These Elements are then synthesized to audio files using the [gTTS](https://gtts.readthedocs.io/en/latest/) synthesizer.
+### Text Classification Baseline Training Branch: 
+This branch is dedicated to the training of the text classification
+baseline model. It includes the code for model architecture, training, and evaluation. The model trained in this branch
+serves as a baseline for comparison with the audio classification models.
 
-------------------------
+### Wav2Vec2 Audio Classification Model Training Branch:
+This branch contains the code for training the Wav2Vec2 audio
+classification model. It includes the code for model architecture, training, and evaluation. The Wav2Vec2 model is one
+of the audio classification models used in this project.
 
-## Dataset
-[Measuring Hate Speech - Hugging Face](https://huggingface.co/datasets/ucberkeley-dlab/measuring-hate-speech/viewer?row=99)
+### AST Audio Classification Model Training Branch:
+This branch is dedicated to the training of the Audio Spectrogram
+Transformer (AST) model. It includes the code for model architecture, training, and evaluation. The AST model is another
+audio classification model used in this project.
 
-## Synthesizer
-[gTTS](https://gtts.readthedocs.io/en/latest/)
+Each branch is independent and contains all the necessary code and documentation for the specific task it is designed
+for. Please switch to the appropriate branch for the task you are interested in.
 
-
-## Timeline
-### Week 8.04. - 14.04
-**Task: Project Planning and Dataset Preparation**
-- Familiarize yourself with existing literature on hate speech classification and audio processing techniques.
-- Begin experimenting with the audio synthesizer
-- generate audio dataset from the text data.
-
-### Week 15.04. - 21.04
-**Task: Data Preprocessing and Feature Extraction**
-- Develop scripts to preprocess the audio data generated from text.
-- Extract relevant features from the audio samples, considering aspects like spectrograms, MFCCs, or Mel-spectrograms.
-- Explore techniques for handling imbalanced classes in the dataset if applicable.
-- Split the dataset into training, validation, and test sets.
-- Start with baseline CNN
-
-### Week 22.04. - 28.04
-**Task: Baseline Model Development (CNN)**
-- Implement a baseline CNN model for hate speech classification using the preprocessed audio features.
-- Train the CNN model on the training dataset and validate its performance using the validation set.
-- Experiment with different architectures, hyperparameters, and regularization techniques to optimize model performance.
-- Document the baseline model's architecture and performance metrics.
-
-### Week 29.04. - 05.05
-**Task: Advanced Model Research and Design (Audio Transformer)**
-- Dive deeper into the audio transformer architecture and related research papers.
-- Understand the intricacies of implementing an audio transformer for hate speech classification.
-- Design the architecture of the advanced model based on the insights gained from the research.
-- Set up the necessary infrastructure and libraries required for implementing the audio transformer.
-- Begin Implementation of the audio transformer architecture
-
-### Week 06.05. - 12.05
-**Task: Advanced Model Implementation and Training**
-- Finish the implementation of the transformer architecture
-- Train the advanced model on the preprocessed audio data.
-- Monitor the training process, tune hyperparameters if necessary, and address any issues that arise.
-- Evaluate the performance of the advanced model on the validation set and compare it with the baseline CNN model.
-
-### Week 13.05. - 19.05
-**Task: Poster Creation**
-- Buffer time for the transformer architecture
-- Buffer time for the hyperparameter tuning
-- Document the advanced model's architecture and performance metrics.
-- Summarize the project's objectives, methodologies, datasets, and model architectures in a concise manner.
-- Design a visually appealing poster layout using appropriate graphics and text.
-- Incorporate key findings, results, and performance metrics from both the baseline CNN and advanced audio transformer models.
-- Review and refine the poster content to ensure clarity and coherence.
-
-### Week 20.05. - 26.05
-**Task: Presentation Preparation and Finalization**
-- Prepare a slide deck for the presentation based on the content of the poster.
-- Practice delivering the presentation to ensure smooth delivery and adherence to time constraints.
-- Gather feedback from peers or mentors and make necessary revisions to both the poster and presentation.
-- Finalize the poster and presentation materials for submission and presentation.
-- Rehearse the presentation multiple times to build confidence and familiarity with the content.
+## Abstract
+In this study, we compare hate speech classification in audio using waveform and spectrogram-based approaches. Our
+hypothesis suggests that detecting hate speech in audio files, generated by text-to-speech synthesis (TTS) of social
+media comments from the dataset "Measuring-hate-speech", is viable. We aim to determine if models using spectrograms
+outperform those using raw audio waveforms. To achieve this, we utilize the Coqui-TTS project for audio sample
+generation. We fine-tune two models, wav2vec2 and the audio spectrogram transformer (AST), using the generated samples.
+Additionally, we fine-tune a DistilBERT model trained on the non-synthesized text samples for comparison. Our evaluation
+on validation and test sets showcases the potential of audio-based hate speech classification. Overall, our findings
+underscore the effectiveness of audio-based hate speech classification methods and highlight a promising area for
+further research possibilities.
