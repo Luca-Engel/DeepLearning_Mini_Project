@@ -3,7 +3,7 @@
 ## Trained Model Huggingface Names
 - AST: [DL-Project/hatespeech_ast](https://huggingface.co/DL-Project/hatespeech_ast)
 - wav2vec2: [DL-Project/hatespeech_wav2vec2](https://huggingface.co/DL-Project/hatespeech_wav2vec2)
-- DistilBERT: [DL-Project/hatespeech_distilbert](DL-Project/hatespeech_distilbert)
+- DistilBERT: [DL-Project/hatespeech_distilbert](https://huggingface.co/DL-Project/hatespeech_distilbert)
 
 ## Repository Structure
 
