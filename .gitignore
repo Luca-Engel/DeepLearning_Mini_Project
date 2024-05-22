@@ -1,2 +1,11 @@
-/client_oauth.json
-/.idea/
+client_oauth.json
+.ipynb_checkpoints/**
+__pycache__/**
+/.idea/**
+/data/.ipynb_checkpoints/**
+/data/__pycache__/**
+/data/.DS_Store
+/data/audio/**
+.DS_Store
+
+
