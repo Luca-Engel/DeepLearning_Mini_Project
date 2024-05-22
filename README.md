@@ -1,11 +1,11 @@
 # DeepLearning_Mini_Project: Comparative Analysis of Hate Speech Classification in Audio: A Study of Waveform vs. Spectrogram-based Approaches
 
-## Trained Model Huggingface Names
+## Huggingface Trained Models
 - AST: [DL-Project/hatespeech_ast](https://huggingface.co/DL-Project/hatespeech_ast)
 - wav2vec2: [DL-Project/hatespeech_wav2vec2](https://huggingface.co/DL-Project/hatespeech_wav2vec2)
 - DistilBERT: [DL-Project/hatespeech_distilbert](https://huggingface.co/DL-Project/hatespeech_distilbert)
 
-## Huggingface Dataste
+## Huggingface Dataset
 - [DL-Project/hatespeech_synthesized_dataset](https://huggingface.co/datasets/DL-Project/hatespeech_synthesized_dataset)
 
 ## Repository Structure
