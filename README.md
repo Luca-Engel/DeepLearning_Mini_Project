@@ -5,6 +5,9 @@
 - wav2vec2: [DL-Project/hatespeech_wav2vec2](https://huggingface.co/DL-Project/hatespeech_wav2vec2)
 - DistilBERT: [DL-Project/hatespeech_distilbert](https://huggingface.co/DL-Project/hatespeech_distilbert)
 
+## Huggingface Dataste
+- [DL-Project/hatespeech_synthesized_dataset](https://huggingface.co/datasets/DL-Project/hatespeech_synthesized_dataset)
+
 ## Repository Structure
 
 This repository is organized into four main branches, each serving a specific purpose in the project workflow:  
