@@ -1,2 +1,15 @@
-/client_oauth.json
-/.idea/
+client_oauth.json
+.ipynb_checkpoints/**
+__pycache__/**
+data/__pycache__/**
+data/.ipynb_checkpoints/
+data/.ipynb_checkpoints/**
+data/.DS_Store
+data/audio/**
+.idea/**
+finetuned_wav2vec/**
+generation_audio/__pycache__/**
+generation_audio/.ipynb_checkpoints/**
+.DS_Store
+preprocessing/__pycache__/**
+
